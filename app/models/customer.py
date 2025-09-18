@@ -8,3 +8,14 @@ class Customer(BaseModel):
     contact_info: EmailStr = Field(..., description="The email address of the customer")
     is_disabled: bool = Field(False, description="Indicates if the customer is disabled")
     medical_conditions: Optional[str] = Field(None, description="Any medical conditions the customer has")
+    
+    
+class CustomerCreate(BaseModel):
+    name: str
+    age: int
+    contact_info: str
+    is_disabled: bool = False
+    medical_conditions: str
+    
+class CustomerResponse(CustomerCreate):
+    id: str
