@@ -21,3 +21,12 @@ class RentalCreate(BaseModel):
 
 class RentalResponse(RentalCreate):
     id: str
+    
+class GetRentalsResponse(BaseModel):
+    rentals: list[RentalResponse]
+    total: int
+    page: int
+    size: int
+    
+class GetRentalResponse(BaseModel):
+    rental: RentalResponse

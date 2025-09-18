@@ -15,7 +15,7 @@ class CustomerCreate(BaseModel):
     age: int
     contact_info: str
     is_disabled: bool = False
-    medical_conditions: str
+    medical_conditions: Optional[str]
     
 class CustomerResponse(CustomerCreate):
     id: str
