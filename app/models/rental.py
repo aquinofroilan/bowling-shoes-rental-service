@@ -1,7 +1,6 @@
-from typing import Optional
 from pydantic import BaseModel, Field, NaiveDatetime
 
-class Customer(BaseModel):
+class Rental(BaseModel):
     id: str = Field(..., description="The unique identifier for the customer")
     customer_id: str = Field(..., description="The customer ID")
     rental_date: NaiveDatetime = Field(..., description="The date when the rental was made")
