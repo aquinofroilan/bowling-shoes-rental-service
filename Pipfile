@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 fastapi = "*"
 uvicorn = "*"
+supabase = "==2.19.0"
+python-dotenv = "==1.1.1"
+google-genai = "==1.38.0"
 
 [dev-packages]
 black = "*"
