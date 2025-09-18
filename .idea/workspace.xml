@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edcc2d2c-8161-4196-96e2-181fdb29564b" name="Changes" comment="scaffold project structure and initialize FastAPI application">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/docker-compose.yml" afterDir="false" />
+    <list default="true" id="edcc2d2c-8161-4196-96e2-181fdb29564b" name="Changes" comment="scaffold project structure and add initial configuration files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <workItem from="1758170993977" duration="348000" />
       <workItem from="1758171411275" duration="252000" />
       <workItem from="1758171697976" duration="654000" />
-      <workItem from="1758172377659" duration="2245000" />
+      <workItem from="1758172377659" duration="2740000" />
     </task>
     <task id="LOCAL-00001" summary="initialize FastAPI application with basic endpoints and project configuration">
       <option name="closed" value="true" />
@@ -121,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758174374308</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="scaffold project structure and add initial configuration files">
+      <option name="closed" value="true" />
+      <created>1758175036690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758175036690</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize FastAPI application with basic endpoints and project configuration" />
     <MESSAGE value="scaffold project structure and initialize FastAPI application" />
-    <option name="LAST_COMMIT_MESSAGE" value="scaffold project structure and initialize FastAPI application" />
+    <MESSAGE value="scaffold project structure and add initial configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="scaffold project structure and add initial configuration files" />
   </component>
 </project>
