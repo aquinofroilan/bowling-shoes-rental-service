@@ -24,9 +24,6 @@ class RentalResponse(RentalCreate):
     
 class GetRentalsResponse(BaseModel):
     rentals: list[RentalResponse]
-    total: int
-    page: int
-    size: int
     
 class GetRentalResponse(BaseModel):
     rental: RentalResponse

@@ -23,18 +23,12 @@ def get_customer(customer_id: str):
 
     return result.data[0]
 
-@router.get("rentals/{customer_id}", response_model=GetRentalsResponse)
-def get_customer_rentals(customer_id: str, page: int = 1, size: int = 10):
-    offset = (page - 1) * size
-    result = supabase.table("rental").select("*").eq("customer_id", customer_id).range(offset, offset + size - 1).execute()
-    total_result = supabase.table("rental").select("id", count="exact").eq("customer_id", customer_id).execute()
-
+@router.get("/rentals/{customer_id}", response_model=GetRentalsResponse)
+def get_customer_rentals(customer_id: str):
+    result = supabase.table("rental").select("*").eq("customer_id", customer_id).execute()
     if not result.data:
         raise HTTPException(status_code=404, detail="No rentals found for this customer")
 
     return {
         "rentals": result.data,
-        "total": total_result.count,
-        "page": page,
-        "size": size
     }
