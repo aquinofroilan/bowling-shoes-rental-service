@@ -7,6 +7,8 @@
     <list default="true" id="edcc2d2c-8161-4196-96e2-181fdb29564b" name="Changes" comment="scaffold project structure and add initial configuration files">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="edcc2d2c-8161-4196-96e2-181fdb29564b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "chore/scaffold-files-and-project=structure",
+    "git-widget-placeholder": "staging",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -100,6 +102,15 @@
       <workItem from="1758171411275" duration="252000" />
       <workItem from="1758171697976" duration="654000" />
       <workItem from="1758172377659" duration="2740000" />
+      <workItem from="1758172377659" duration="3304000" />
+    </task>
+    <task id="LOCAL-00001" summary="initialize FastAPI application with basic endpoints and project configuration">
+      <option name="closed" value="true" />
+      <created>1758172706075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758172706075</updated>
     </task>
     <task id="LOCAL-00001" summary="initialize FastAPI application with basic endpoints and project configuration">
       <option name="closed" value="true" />
@@ -126,10 +137,42 @@
       <updated>1758175036690</updated>
     </task>
     <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00002" summary="scaffold project structure and initialize FastAPI application">
+      <option name="closed" value="true" />
+      <created>1758174374308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758174374308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="scaffold project structure and add initial configuration files">
+      <option name="closed" value="true" />
+      <created>1758175036690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758175036690</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update .gitignore and workspace.xml to include environment variables and adjust task comments">
+      <option name="closed" value="true" />
+      <created>1758175258894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758175258894</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialize FastAPI application with basic endpoints and project configuration" />
+    <MESSAGE value="scaffold project structure and initialize FastAPI application" />
+    <MESSAGE value="scaffold project structure and add initial configuration files" />
+    <MESSAGE value="update .gitignore and workspace.xml to include environment variables and adjust task comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore and workspace.xml to include environment variables and adjust task comments" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize FastAPI application with basic endpoints and project configuration" />
