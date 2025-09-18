@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  bowling-shoes-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: bowling-shoes-rental-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - HOST=0.0.0.0
+      - PORT=8000
+      - LOG_LEVEL=info
+    env_file:
+      - .env
+    volumes:
+      # Mount logs directory (optional)
+      - ./logs:/app/logs
+    networks:
+      - bowling-shoes-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+
+networks:
+  bowling-shoes-network:
+    driver: bridge
+
+volumes:
+  logs:
+    driver: local
